@@ -12,14 +12,13 @@ import socket
 import binascii
 
 #default global setting
-headers = {'Host' : 'client-onisoul.86joy.com',
+headers = {'Host' : 'your default host name',
            'Connection' : 'keep-alive',
-           'Referer' : 'http://game-onisoul.86joy.com/client/app.unity3d?revision=30672007',
            'User-Agent' : 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36',
            'Accept-Encoding' : 'gzip,deflate,sdch',
            'Accept-Language' : 'zh-CN,zh;q=0.8,en;q=0.6,ja;q=0.4,ko;q=0.2,zh-TW;q=0.2'}
 url = '/crossdomain.xml'
-domain = 'client-onisoul.86joy.com'
+domain = 'your domain name'
 debug = False
 
 class CDNTEST(object):
@@ -238,8 +237,8 @@ def main():
             connect_timeout = int(config['CONNECT']['timeout']) if int(config['CONNECT']['timeout'])>0 else 5
             if debug:
                 print('connect_timeout',connect_timeout)
-        gwz = CDNTEST(dnsFile, dns_timeout, nodeFile, connect_timeout)
-        gwz.host_connect()
+        cdn = CDNTEST(dnsFile, dns_timeout, nodeFile, connect_timeout)
+        cdn.host_connect()
 
 if __name__ == '__main__':
     multiprocessing.freeze_support()
