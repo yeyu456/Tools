@@ -10,4 +10,5 @@ CDN Test Tool
 4.  you can define all the parameters by yourself with setting.cfg(global setting), dns.cfg(dns server ip address setting) and node.cfg(cdn ip address setting).
 
 ## Download ##
-* [Windows Version]()
+* [Windows Version](https://github.com/yeyu456/Tools/raw/master/CDN_TEST/Windows%20Version/CDN_TEST.zip)
+* [Source Code](https://github.com/yeyu456/Tools/tree/master/CDN_TEST/Source%20Code)
