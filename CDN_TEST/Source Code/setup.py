@@ -10,6 +10,6 @@ build_exe_options = {"packages": ["os"], "excludes": ["tkinter"]}
 base='Console'
 setup(  name = "CDN节点测试工具",
         version = "1.2.0",
-        description = "DN TEST",
+        description = "CDN TEST",
         options = {"build_exe": build_exe_options},
         executables = [Executable("CDN_TEST.py", base=base)])
